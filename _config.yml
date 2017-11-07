@@ -1,0 +1,25 @@
+# Site settings
+title: Yung-An's World!
+header-img: img/home-bg.png
+email: mathstana@gmail.com
+copyright_name: Yung-An He
+description: "This is a blog about software."
+baseurl: "/blog_page"
+url: ""
+#twitter_username:
+github_username: mathsigit
+#facebook_username:
+email_username: mathstana@gmail.com
+
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+# google_tracking_id:
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
