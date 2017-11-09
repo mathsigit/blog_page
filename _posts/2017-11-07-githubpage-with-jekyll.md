@@ -71,10 +71,12 @@ jekyll -v
 <h3 id="new_blog">建置你的部落格</h3>
 如果進行到這個步驟，相信你已經安裝好Jekyll。    
 首先我們要先使用jekyll建立並初始化一個新blog專案，並且進入blog專案資料夾內：    
+
 ```bash
 jekyll new myblog #建立並初始化一個新blog專案
 cd myblog         #進入blog專案資料夾
 ```
+
 如果成功會出現下面的訊息：
 ```bash
 Running bundle install in /Volumes/Sdhd/Documents/project/mathsigit/github/test...
@@ -88,6 +90,7 @@ Running bundle install in /Volumes/Sdhd/Documents/project/mathsigit/github/test.
   Bundler: Using bundler 1.16.0
   ...
 ```
+
 Blog專案資料夾結構如下：
 ```bash
 -rw-r--r--  1 stana  staff   398B Nov 10 00:16 404.html
