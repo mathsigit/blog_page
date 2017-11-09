@@ -13,7 +13,7 @@ header-img: "img/technical-post-bg.png"
 
 ---
 <h3 id="why_jekyll">為何是Jekyll?</h3>
-由於GitHub Page只能放置靜態網站，GitHub Page也支援Jekyll，說明文件也非常豐富，所以就選他啦！完整的介紹請看這裡：[Using Jekyll as a static site generator with GitHub Pages][jekyll_on_githubpage]
+由於GitHub Page只能放置靜態網站，GitHub Page也支援Jekyll，說明文件也非常豐富，所以就選它啦！完整的介紹請看這裡：[Using Jekyll as a static site generator with GitHub Pages][jekyll_on_githubpage]
 
 在安裝Jekyll前，必須確認電腦是否已經安裝了下列的工具：
 * [`Ruby`][ruby]
