@@ -25,6 +25,17 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
+.hyberlink {
+  text-decoration: inherit;
+  font-family: monospace;
+  font-size: 16px;
+}
+.hyberlink a {
+  color: #BDB76B;
+}
+.hyberlink a:hover,a:focus{
+  color: #0085a1;
+}
 a {
   color: #404040;
 }
