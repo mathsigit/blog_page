@@ -43,6 +43,7 @@ export HDFS_DATANODE_USER=root
 export HADOOP_SECURE_DN_USER=hdfs
 export HDFS_NAMENODE_USER=root
 export HDFS_SECONDARYNAMENODE_USER=root
+export YARN_RESOURCEMANAGER_USER=root
 ```
 **由於叢集為測試使用，故使用者設定為root，正式環境請根據企業內部資安規範設置。**
 
