@@ -11,9 +11,9 @@ header-img: "img/technical-post-bg.png"
 
 基於 Google 2003 年發表了 MapReduce 與 GFS(Google File System) 的論文，在兩位
 Hadoop 創始人 Doug Cutting 與 Mike Cafarella 的努力下，Hadoop 0.1.0 於 2006 年釋
-出。\
+出。
 從 2006 年到現在， Hadoop 依然就像 Doug Cutting 所說的 “ 持續在進步 ”，目前的穩定
-版本已經來到了 2.8.2，而 3.0.0 的釋出時間也即將來臨。\
+版本已經來到了 2.8.2，而 3.0.0 的釋出時間也即將來臨。
 
 在 Big Data 的世界，Hadoop 目前成為不可或缺的主角，而依附在 Hadoop 上所發展出來
 的 Project 也非常的多。在接下來的 30 篇文章中，除了 Hadoop 以外還會介紹下列的
