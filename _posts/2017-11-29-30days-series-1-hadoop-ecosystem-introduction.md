@@ -35,7 +35,7 @@ Ecosystem Project，內容包含`介紹`、`安裝教學`、`故障排除`與各
   * 基於 Hadoop 架構的資料倉儲 (data warehouse) 工具，可對儲存於 HDFS 上的結構化
     檔案 ( 如 csv 格式 ) 以 SQL 語法進行查詢與分析。
 * [_Apache Spark_][spark_official]
-  * 分散式運算的框架，因其使 In Memory 運算的特點，計算效能上比傳統 MapReduce 最
+  * 分散式運算的框架，因其 In Memory 運算的特點，計算效能上比傳統 MapReduce 最
     多快上 100 倍，成為近幾年 Big Data 世界深受歡迎的新寵兒。因原始碼使用
     [_Scala_][scala_official] 撰寫而成，也讓 Scala 使用者在近幾年快速成長。
 * [_Apache Solr_][solr_official]
