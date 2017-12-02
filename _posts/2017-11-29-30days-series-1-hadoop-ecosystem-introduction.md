@@ -20,27 +20,27 @@ Hadoop 創始人 Doug Cutting 與 Mike Cafarella 的努力下，Hadoop 0.1.0 於
 Ecosystem Project，內容包含`介紹`、`安裝教學`、`故障排除`與各 `Project 使用情
 境`。
 
-* [Apache Hadoop][hadoop_official]
+* [_Apache Hadoop_][hadoop_official]
   * 除了眾所皆知的 HDFS 外，Yarn 與 MapReduce 都是被廣泛使用的模組。簡單來說
     Hadoop 是一個集`儲存`、`運算`、`資源管理`於一身的分散式 Big Data 處理平臺，
     也因容易擴充 (scale) 與高可用性 (high-availability) 的優點，讓 Hadoop 廣受企
     業用戶的歡迎。
-* [Apache HBase][hbase_official]
+* [_Apache HBase_][hbase_official]
   * 運作在 HDFS 之上的非關連式分散式資料庫 (non-relational, distributed
     database)。想在 Big Data 的世界使用 DataBase，又想擁有 Hadoop 的容錯機制優點
     ，選 HBase 就對了！HBase 具備高吞吐量與低延遲性的特點，非常適合在 Big Data
     進行更快速的讀寫操作。
-* [Apache Hive][hive_official]
+* [_Apache Hive_][hive_official]
   * 基於 Hadoop 架構的資料倉儲 (data warehouse) 工具，可對儲存於 HDFS 上的結構化
     檔案 ( 如 csv 格式 ) 以 SQL 語法進行查詢與分析。
-* [Apache Spark][spark_official]
+* [_Apache Spark_][spark_official]
   * 分散式運算的框架，因其使 In Memory 運算的特點，計算效能上比傳統 MapReduce 最
     多快上 100 倍，成為近幾年 Big Data 世界深受歡迎的新寵兒。因原始碼使用
-    [Scala][scala_official] 撰寫而成，也讓 Scala 使用者在近幾年快速成長。
-* [Apache Solr][solr_official]
-  * 基於[Apache Lucene][lucene_official]發展出來的搜尋平台，Apache Lucene 的創始
-    者同時也是 Hadoop 之父 Doug Cutting。Apache Solr 提供全文檢索功能，可以在數
-    以百萬計的檔案中快速搜尋關鍵字，成為 Hadoop Ecosystem 不可或缺的工具之一。
+    [_Scala_][scala_official] 撰寫而成，也讓 Scala 使用者在近幾年快速成長。
+* [_Apache Solr_][solr_official]
+  * 基於[_Apache Lucene_][lucene_official]發展出來的搜尋平台，Apache Lucene 的創
+    始者同時也是 Hadoop 之父 Doug Cutting。Apache Solr 提供全文檢索功能，可以在
+    數以百萬計的檔案中快速搜尋關鍵字，成為 Hadoop Ecosystem 不可或缺的工具之一。
 
 [hadoop_official]: https://hadoop.apache.org/
 [hbase_official]: https://hbase.apache.org/
