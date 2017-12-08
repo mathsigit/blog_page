@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "30天系列 Day 4-Hadoop指令介紹-HDFS篇"
+title:      "30天系列 Day 5-Hadoop指令介紹-HDFS篇"
 subtitle:   "30 Days Series Day 5 - Usage of HDFS."
 date:       2017-12-07 00:00:00
 author:     "Yung-An"
@@ -9,7 +9,7 @@ header-img: "img/technical-post-bg.png"
 
 # Hadoop HDFS Usage
 
-本篇將介紹Day 4所提到HDFS相關指令的參數。如果想知道更多的說明，可以使用`hadoop fs -help`指令查看更多。`[]`內的參數可選擇性使用，並非一定要加入指令內。
+本篇將介紹昨天所提到HDFS相關指令的參數。如果想知道更多的說明，可以使用`hadoop fs -help`指令查看更多。`[]`內的參數可選擇性使用，並非一定要加入指令內。
 
 ### 複製檔案至HDFS
 
