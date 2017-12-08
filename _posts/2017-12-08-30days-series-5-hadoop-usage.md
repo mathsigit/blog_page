@@ -11,6 +11,8 @@ header-img: "img/technical-post-bg.png"
 
 本篇將介紹昨天所提到HDFS相關指令的參數。如果想知道更多的說明，可以使用`hadoop fs -help`指令查看更多。`[]`內的參數可選擇性使用，並非一定要加入指令內。
 
+---
+
 ### 複製檔案至HDFS
 
 * `hadoop fs -put [-f] [-p] [-l] [-d] <localsrc> ... <dst>`    
@@ -27,6 +29,8 @@ header-img: "img/technical-post-bg.png"
        為._COPYING_的暫存檔，當儲存完畢後再刪除，若使用這參數將會跳過這步驟。
 ```
 
+---
+
 ### 查詢檔案清單
 
 * `hadoop fs -ls [-C] [-d] [-h] [-R] [-t] [-S] [-r] [-u] [<path> ...]`
@@ -42,6 +46,8 @@ header-img: "img/technical-post-bg.png"
   -u: 使用訪問時間顯示和排序（預設是使用編輯時間）。
 ```
 
+---
+
 ### 顯示檔案內容
 
 * `hadoop fs -cat [-ignoreCrc] URI [URI ...]`
@@ -49,6 +55,8 @@ header-img: "img/technical-post-bg.png"
 參數說明：
   -ignoreCrc: 略過CRC驗證。
 ```
+
+---
 
 ### 建立資料夾
 
@@ -58,10 +66,14 @@ header-img: "img/technical-post-bg.png"
   -p: 類似Unix上 mkdir -p的用法，會將<paths>所有的路徑資料夾全部新增出來。
 ```
 
+---
+
 ### 移動檔案/資料夾與重新命名
 
 * `hadoop fs -mv URI [URI ...] <dest>`    
 此指令可以搬移多個檔案/資料夾，而<dest>必須是一個資料夾。此指令無法跨檔案系統搬移（例如：只能HDFS搬移到HDFS，無法由HDFS搬移到local host）
+
+---
 
 ### 複製檔案/資料夾
 
@@ -71,6 +83,8 @@ header-img: "img/technical-post-bg.png"
   -f: 如果<dest>已經存在，則強制複寫該檔案/資料夾。
   -p: 保留文件屬性(擁有者、修改時間、權限等)。若使用-p而不帶參數，則會保留時間、擁有者與權限。如果使用-pa則保留權限。
 ```
+
+---
 
 ### 複製檔案/資料夾回本機電腦
 
@@ -83,6 +97,8 @@ header-img: "img/technical-post-bg.png"
   -ignorecrc: 略過CRC驗證。
   -crc: 在檔案下載時寫入CRC認證。
 ```
+
+---
 
 ### 刪除HDFS上的檔案/資料夾
 
