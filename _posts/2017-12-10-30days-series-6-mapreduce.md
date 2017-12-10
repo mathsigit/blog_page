@@ -124,7 +124,7 @@ jar cf hwcs.jar HadoopWordCountSample*.class
     #上傳
     hadoop fs -put wordcount_target1 wordcount_target2 /tmp/wordcount_target
     ```
-* Step5. 在Hadoop上執行程式碼
+* **Step5. 在Hadoop上執行程式碼**
 ```bash
 hadoop jar hwcs.jar HadoopWordCountSample /tmp/wordcount_target /tmp/wordcount_result
 #說明
@@ -133,7 +133,7 @@ HadoopWordCountSample: 欲執行的class name
 /tmp/wordcount_target: 欲計算檔案路徑
 /tmp/wordcount_result: 計算結果存放路徑
 ```
-* Step6. 查看結果：
+* **Step6. 查看結果：**
 ```bash
 hadoop fs -cat /tmp/wordcount_result/part-r-00000
 #結果
