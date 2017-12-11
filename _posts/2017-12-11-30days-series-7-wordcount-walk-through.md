@@ -9,7 +9,9 @@ header-img: "img/technical-post-bg.png"
 
 ## MapReduce WordCount 流程
 
-由於這次計算的檔案有兩個，且檔案容量小於HDFS一個block的大小(預設為64mb)，wordcount_target1與wordcount_target2被上傳至HDFS後分別會被儲存至兩個block，執行MapReduce運算時，預設也會啟動**2**個map來執行運算。
+承接上篇的程式碼，這次計算的檔案有兩個：**wordcount_target1** 與 **wordcount_target2**，由於檔案容量小於HDFS一個block的大小(預設為64mb)，這兩個檔案被上傳至HDFS後分別會被儲存至兩個block。    
+
+程式開始執行運算時，在這個範例中首先會先執行**map**，預設會啟動**2**個 (與block數量相同) map來執行分散運算，最後**reduce** 會將所有的**map**運算結果進行最後的加總。
 
 ### Map
 
