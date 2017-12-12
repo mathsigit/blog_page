@@ -133,6 +133,10 @@ HadoopWordCountSample: 欲執行的class name
 /tmp/wordcount_target: 欲計算檔案路徑
 /tmp/wordcount_result: 計算結果存放路徑
 ```
+如果MapReduce job成功送出到Hadoop上執行後，Yarn會接手資源控管，可以透過web ui：
+`http://{host_or_ip}:8088` 觀察MapReduce運作的情形。    
+註：{host_or_ip}請輸入安裝時namenode所在的host name或是ip。如果是Standalone安裝模式，請輸入**localhost**。
+
 * **Step6. 查看結果：**
 ```bash
 hadoop fs -cat /tmp/wordcount_result/part-r-00000
