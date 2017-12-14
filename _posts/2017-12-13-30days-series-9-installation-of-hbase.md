@@ -67,8 +67,11 @@ export PATH=$PATH:$HBASE_HOME/bin
   ```
   如果啟動成功，可以使用`jps`指令來觀察HBase的daemon，其中會包含：
     * HMaster
+      * 與HDFS的namenode功能類似，紀錄資料位於哪個RegionServer，重要性也與namenode一樣。
     * HRegionServer
+      * 相當於HDFS的datanode，負責儲存資料。
     * QuorumPeerMain
+      * HBase內建的zookeeper。如果安裝HBase時沒有另外指定外部的zookeeper，啟動HBase時會自行啟動。
 * 使用HDFS安裝模式：
   * 修改_hbase-site.xml_即可，啟動方式與`local file system`模式相同，只要將`hbase.rootdir`改為HDFS上的路徑，並將`hbase.cluster.distributed`設定為`false`
   ```xml
