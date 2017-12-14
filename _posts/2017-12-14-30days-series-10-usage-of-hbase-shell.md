@@ -9,7 +9,7 @@ header-img: "img/technical-post-bg.png"
 
 # HBase Shell Usage
 
-HBase Shell是使用 [(J)Ruby's][jruby_official] IRB(Interactive Ruby Shell)撰寫而成的特殊指令，使用者可以透過它下指令來與HBase互動。
+假設已經完成前一篇的HBase安裝，或者可以使用作者所撰寫的[hbase on docekr][hbase_on_docker_github]，接著只要使用下面指令就可以使用HBase Shell與HBase互動。
 
 ## HBase Shell 入口點
 
@@ -133,3 +133,4 @@ Took 0.0365 seconds
 看完了HBase Shell的入門指令後，接下來要來介紹HBase Rowkey Design。
 
 [jruby_official]: http://jruby.org/
+[hbase_on_docker_github]: https://github.com/is-land/hbase-on-docker/tree/2.0.0-alpha4
