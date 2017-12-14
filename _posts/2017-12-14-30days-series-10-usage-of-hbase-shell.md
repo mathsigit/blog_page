@@ -7,7 +7,7 @@ author:     "Yung-An"
 header-img: "img/technical-post-bg.png"
 ---
 
-# HBase2 Shell Usage
+# HBase Shell Usage
 
 HBase Shell是使用 [(J)Ruby's][jruby_official] IRB(Interactive Ruby Shell)撰寫而成的特殊指令，使用者可以透過它下指令來與HBase互動。
 
