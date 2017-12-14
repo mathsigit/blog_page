@@ -70,7 +70,7 @@ export PATH=$PATH:$HBASE_HOME/bin
       * 與HDFS的namenode功能類似，紀錄資料位於哪個RegionServer，重要性也與namenode一樣。
     * HRegionServer
       * 相當於HDFS的datanode，負責儲存資料。
-    * QuorumPeerMain
+    * HQuorumPeer
       * HBase內建的zookeeper。如果安裝HBase時沒有另外指定外部的zookeeper，啟動HBase時會自行啟動。
 * 使用HDFS安裝模式：
   * 修改_hbase-site.xml_即可，啟動方式與`local file system`模式相同，只要將`hbase.rootdir`改為HDFS上的路徑，並將`hbase.cluster.distributed`設定為`false`
@@ -135,6 +135,8 @@ server-a3
 ---
 
 ## 最後
+
+安裝完成後，可以透過`http://{HBASE_MASTER_HOST_NAME_OR_IP}:16010` web ui來查看HBase叢集的狀況。`{HBASE_MASTER_HOST_NAME_OR_IP}`為HBase Master所在的機器。
 
 無論是`Standalone`、`Pseudo-Distributed`或是`Fully-Distributed`，需挑選適用的安裝模式才能發揮HBase最好的效益，也能減少使用上的困擾。
 
