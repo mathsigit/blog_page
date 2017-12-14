@@ -138,6 +138,9 @@ server-a3
 
 無論是`Standalone`、`Pseudo-Distributed`或是`Fully-Distributed`，需挑選適用的安裝模式才能發揮HBase最好的效益，也能減少使用上的困擾。
 
+如果想要快速體驗`Fully-Distributed`模式的HBase cluster，可以使用作者所撰寫的[`hbase on docekr`][hbase_on_docker_github]，內有使用說明與教學，也歡迎fork並開PR。
+
 介紹完了HBase安裝後，接下來要進入`hbase shell`的使用教學！
 
 [hbase_2_0_0alpha4_download]: http://apache.stu.edu.tw/hbase/2.0.0-alpha4/
+[hbase_on_docker_github]: https://github.com/is-land/hbase-on-docker/tree/2.0.0-alpha4
