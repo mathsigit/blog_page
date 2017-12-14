@@ -9,7 +9,7 @@ header-img: "img/technical-post-bg.png"
 
 # Day 9 - Hadoop Ecosystem 之 HBase 安裝教學
 
-HBase安裝模式與Hadoop相同，有`Standalone`、`Pseudo-Distributed`與`Fully-Distributed`，而這些名稱也是根據Hadoop的安裝模式所命名。比較特別的是`Standalone`與`Pseudo-Distributed`模式不一定要將資料儲存在HDFS上，但無法擁有Hadoop的容錯機制與分散式等優點，而`Fully-Distributed` **__只能__** 運行在Hadoop上面。
+HBase安裝模式與Hadoop相同，有`Standalone`、`Pseudo-Distributed`與`Fully-Distributed`，而這些名稱也是根據Hadoop的安裝模式所命名。比較特別的是`Standalone`與`Pseudo-Distributed`模式不一定要將資料儲存在HDFS上，但無法擁有Hadoop的容錯機制與分散式等優點，而`Fully-Distributed` **_只能_** 運行在Hadoop上面。
 
 ## 事前準備
 
