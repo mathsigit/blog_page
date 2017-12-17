@@ -7,7 +7,7 @@ author:     "Yung-An"
 header-img: "img/technical-post-bg.png"
 ---
 
-在這篇文章內容，將會學到如何使用HBase Client API對HBase的CRUD操作。本篇的範例程式碼是使用_HBase 0.98.x_，相容於_HBase 1.x.x_。
+在這篇文章內容，將會學到如何使用HBase Client API對HBase的CRUD操作。本篇的範例程式碼所使用的HBase版本是 _HBase 0.98.x_ ，相容於 _HBase 1.x.x_ 。
 
 首先先來看一下SQL、API與HBase Shell的CRUD對照：
 
