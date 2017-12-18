@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "30天系列 Day 13-HBase Bulkload 簡介"
-subtitle:   "30 Days Series Day 12 - Introduction Of HBase Bulkload."
+subtitle:   "30 Days Series Day 13 - Introduction Of HBase Bulkload."
 date:       2017-12-17 00:00:00
 author:     "Yung-An"
 header-img: "img/technical-post-bg.png"
