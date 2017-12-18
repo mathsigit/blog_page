@@ -31,8 +31,8 @@ From:https://phoenix.apache.org/presentations/OC-HUG-2014-10-4x3.pdf
 
 其最新版本1.120.04s支援HBase 1.12版本，並內建Hive on Spark功能，可對儲存於HDFS上的格式化的資料，使用Hive SQL透過Spark的分散式運算進行查詢，效能比MapReduce快上許多！
 
-免費版本可至[haredbhbaseclient_sourceforge][haredbhbaseclient_official]下載。    
-60天完整試用版經過Cloudera官方認證，具有Security功能，可至[HareDB官方網站][haredbhbaseclient_official]下載
+免費版本可至[haredbhbaseclient_sourceforge][haredbhbaseclient_official]，或者到[HareDB官方網站][haredbhbaseclient_official]下載。    
+60天完整試用版經過Cloudera官方認證，具有Security功能。
 
 [phoenix_official]: http://phoenix.apache.org/
 [is_land]: https://www.is-land.com.tw
