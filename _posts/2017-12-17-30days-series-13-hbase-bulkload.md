@@ -11,7 +11,7 @@ header-img: "img/technical-post-bg.png"
 
 無論是`hbase shell`或是API，使用put新增資料時，會被放入被稱為`MemStore`的記憶體內，同時寫入WAL[1]。在頻繁地寫入的使用情境，為了保護資料的完整，卻會讓寫入的效能低落。
 
->[1] Write-Ahead-Log，用來記錄對HBase表格所有操作的日誌，且保證資料不遺漏，一個RegionServer只會有一個。    
+>[1] Write-Ahead-Log，用來記錄對HBase表格所有操作的日誌，用來確保table資料不遺漏，一個RegionServer只會有一個。    
 
 為了提升輸入資料的效能，HBase提供bulkload的功能，讓使用者可以一次將大批資料透過MapReduce的方式將資料存入。
 
@@ -35,6 +35,8 @@ importtsv.skip.bad.lines: 如果該行資料不符格式，跳過此行繼續讀
 importtsv.separator:      檔案內每個欄位的分隔符號，預設為`,`。
 importtsv.timestamp:      時間註記。
 ```
+
+## HBase Bulkload 步驟
 
 * Step 1: 上傳資料到HDFS。
 假設有個檔案`test.txt`，內容如下：
