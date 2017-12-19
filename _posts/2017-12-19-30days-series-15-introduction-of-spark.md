@@ -48,6 +48,9 @@ Spaek主要包含四個函式庫的功能：
 * MLlib(machine learning)
 * GraphX(graph)
 
+![spark_logistic_regression.png](https://raw.githubusercontent.com/mathsigit/blog_page/gh-pages/img/30_days/spark_components.png)    
+From: https://spark.apache.org/
+
 在Spark的篇章會介紹Spark SQL與Spark Streaming。
 
 
