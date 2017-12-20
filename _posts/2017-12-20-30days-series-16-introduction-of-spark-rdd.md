@@ -51,4 +51,27 @@ nums  = words.filter(_.matches("[0-9]+"))
 
 //RDD Action
 alpha.count()
+nums.count()
 ```
+
+程式碼內容是讀取HDFS檔案後，轉將內容轉成小寫並且以空白為分割符號將每個字切開，並且以對文字與數字分別進行計算，就是一個wordcount的範例程式。    
+一個完整的Spark Application一定會有兩大類型的操作：`Transformations`與`Action`。    
+由範例來看`words`、`alpha`與`nums`的操作都屬於Transformations，`alpha.count()`與`nums.count()`屬於Action。在RDD中 Transformations 的操作是Lazy運作，亦即不會馬上進行計算，只會紀錄使用到哪些資料集(例如讀取HDFS上某個路徑)，當執行Action時才會開始進行運算。當Spark Application 的 Transformations 數量很多卻又需要重複運作時，可以使用`persist`(或`cache`)的method對某個RDD用持久化，這樣該RDD就不會因為Lazy需要重新運算，可以加快運算速度。
+
+[查看更多的transformations API][transformations_api]    
+[查看更多的actions API][actions_api]
+
+**由下圖可以看出Wordcount的程式碼轉換成RDD對照與Lineage：**
+
+![rdd_lineage.png](https://raw.githubusercontent.com/mathsigit/blog_page/gh-pages/img/30_days/rdd_lineage.png)
+
+From: https://www.slideshare.net/frodriguezolivera/apache-spark-41601032#44
+
+當某個RDD運作失敗時，Spark會根據Lineage找到parent RDD是誰，並且從parent RDD繼續計算，以完成整個Spark的運算，由此可以理解Spark的容錯機制。
+
+# 最後
+
+對Spark RDD有初步的了解後，接下來要來介紹Spark Shell，互動式的操作介面。
+
+[transformations_api]: https://spark.apache.org/docs/2.2.0/rdd-programming-guide.html#transformations
+[actions_api]: https://spark.apache.org/docs/2.2.0/rdd-programming-guide.html#actions
