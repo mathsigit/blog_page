@@ -37,7 +37,7 @@ Spark 支援讀取 HDFS 等分散式儲存裝置的檔案，故可以使用HDFS�
   * 4.(Optional) partitioner (hash, range).
   * 5.(Optional) preferred location(s) for each partition.
 
-Lineage 為 RDD的血統關係，主要用來作為容錯處理，先來看一段程式碼：
+Lineage為RDD的血統關係，主要用來作為容錯處理，先來看一段程式碼：
 
 ```scala
 //RDD Transformations
