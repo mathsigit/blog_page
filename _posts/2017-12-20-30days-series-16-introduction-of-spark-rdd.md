@@ -2,7 +2,7 @@
 layout:     post
 title:      "30天系列 Day 16-Apache Spark RDD 簡介"
 subtitle:   "30 Days Series Day 16 - Introduction Of Apache Spark RDD"
-date:       2017-12-120 00:00:00
+date:       2017-12-12 00:00:00
 author:     "Yung-An"
 header-img: "img/technical-post-bg.png"
 ---
