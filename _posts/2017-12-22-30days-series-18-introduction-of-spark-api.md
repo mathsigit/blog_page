@@ -9,7 +9,7 @@ header-img: "img/technical-post-bg.png"
 
 # Spark Hello World API
 
-今天要來介紹Spark Hello World API，其實就是Word Count程式。
+今天要來介紹如何撰寫一段簡單的Spark Hello World API程式碼。
 
 接下來的範例要以python為例。使用python來進行spark submit的好處是不用打包成jar檔，    
 但如果有使用到其他的第三方library，進行spark submit時需要將檔案同時上傳。
