@@ -1,12 +1,3 @@
----
-layout:     post
-title:      "30天系列 Day 24-Apache Hive SQL 基礎教學"
-subtitle:   "30 Days Series Day 24 - Introduction Of Apache Hive SQL"
-date:       2017-12-28 00:00:00 +0800
-author:     "Yung-An"
-header-img: "img/technical-post-bg.png"
----
-
 今天要來介紹Hive SQL語法基礎教學。大部分的人使用情境會是這樣：建立一個table，新增資料，進行查詢、更新資料，必要時刪除table。
 
 首先我們必須進入Hive CLI互動式介面。
@@ -52,7 +43,7 @@ LOCATION                                 : HDFS檔案存放路徑
 
 使用external語法建立table，當刪除table時原始資料檔就會被保留下來了！
 
-## 顯示資料表定義內容
+## 顯示資料表定義內容
 
 既然建立了資料表，如果想了解table schema，該如何查詢呢？可以使用下面指令：
 
@@ -68,20 +59,20 @@ describe person;
 drop table if exist person purge;
 
 #說明
-if exist: 這個非必填項目，但建議使用避免輸入錯誤的table時回傳錯誤訊息。
-purge   : 如果沒有使用，table不會馬上被刪除，而是會被放入類似HDFS的垃圾桶機制一樣，等時間到才會移除。
+if exist: 這個非必填項目，但建議使用避免輸入錯誤的table時回傳錯誤訊息。
+purge   : 如果沒有使用，table不會馬上被刪除，而是會被放入類似HDFS的垃圾桶機制一樣，等時間到才會移除。
 ```
 
 ## 查詢資料(select)
 
-基本的SQL是一定有的，另外包含`join`、`group by`等等。
+基本的SQL是一定有的，另外包含`join`、`group by`等等。
 
 ```bash
 #取出所有欄位
 select * from person;
-#指定顯示欄位
-select first_name, sec_name, tel, age from person;
-#使用where
+#指定顯示欄位
+select first_name, sec_name, tel, age from person;
+#使用where
 select * from person where age > 30 or sec_name='Apache';
 ```
 
@@ -100,9 +91,9 @@ insert into table person values
 此語法於Hive 0.14版本後開始支援。
 
 ```bash
-#刪除first_name等於Mike的資料
-delete from person where first_name = 'Mike';
-#刪除年齡小於20
+#刪除first_name等於Mike的資料
+delete from person where first_name = 'Mike';
+#刪除年齡小於20
 delete from person where age < 20;
 ```
 
@@ -111,11 +102,11 @@ delete from person where age < 20;
 此語法於Hive 0.14版本後開始支援。
 
 ```bash
-update person set age = 18, tel = '' where first_name = 'Hive';
+update person set age = 18, tel = '' where first_name = 'Hive';
 ```
 
 # 最後
 
-本篇只針對基本用法進行說明，Hive的SQL無論是DDL或是DML功能眾多，如有需要可至[官方文件][languagemanual]查看。看完了SQL基礎教學，接下來我們就要來看Apache Hive 與 HBase的介紹囉。
+本篇只針對基本用法進行說明，Hive的SQL無論是DDL或是DML功能眾多，如有需要可至[官方文件][languagemanual]查看。看完了SQL基礎教學，接下來我們就要來看Apache Hive 與 HBase的介紹囉。
 
 [language_manual]: https://cwiki.apache.org/confluence/display/Hive/LanguageManual
