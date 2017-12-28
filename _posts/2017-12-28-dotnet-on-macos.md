@@ -18,6 +18,8 @@ header-img: "img/technical-post-bg.png"
 
 建立專案資料夾後，以vs code開啟專案資料夾，並開啟**Integrated Terminal**
 
+![intergranted-terminal.png](https://raw.githubusercontent.com/mathsigit/blog_page/gh-pages/img/dotnet/intergranted-terminal.png)
+
 ## 初始化專案
 
 輸入指令`dotnet new console`，以便初始化專案。
