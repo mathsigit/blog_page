@@ -1,3 +1,12 @@
+---
+layout:     post
+title:      "30天系列 Day 24 - Apache Hive SQL 基礎教學"
+subtitle:   "30 Days Series Day 24 - Installation Of Apache Hive SQL"
+date:       2017-12-28 00:00:00 +0800
+author:     "Yung-An"
+header-img: "img/technical-post-bg.png"
+---
+
 今天要來介紹Hive SQL語法基礎教學。大部分的人使用情境會是這樣：建立一個table，新增資料，進行查詢、更新資料，必要時刪除table。
 
 首先我們必須進入Hive CLI互動式介面。
@@ -107,6 +116,6 @@ update person set age = 18, tel = '' where first_name = 'Hive';
 
 # 最後
 
-本篇只針對基本用法進行說明，Hive的SQL無論是DDL或是DML功能眾多，如有需要可至[官方文件][languagemanual]查看。看完了SQL基礎教學，接下來我們就要來看Apache Hive 與 HBase的介紹囉。
+本篇只針對基本用法進行說明，Hive的SQL無論是DDL或是DML功能眾多，如有需要可至[官方文件][language_manual]查看。看完了SQL基礎教學，接下來我們就要來看Apache Hive 與 HBase的介紹囉。
 
 [language_manual]: https://cwiki.apache.org/confluence/display/Hive/LanguageManual
