@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "30天系列 Day 24 - Apache Hive SQL 基礎教學"
-subtitle:   "30 Days Series Day 24 - Installation Of Apache Hive SQL"
+subtitle:   "30 Days Series Day 24 - Introduction Of Apache Hive SQL"
 date:       2017-12-28 00:00:00 +0800
 author:     "Yung-An"
 header-img: "img/technical-post-bg.png"
