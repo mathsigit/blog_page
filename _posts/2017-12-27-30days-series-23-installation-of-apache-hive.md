@@ -29,7 +29,7 @@ header-img: "img/technical-post-bg.png"
 tar -xzvf apache-hive-1.2.2-bin.tar.gz
 ```
 
-解壓縮完畢後，編輯`~/.bashrc`設定HIVE_HOME環境變數。
+解壓縮完畢後，編輯`~/.bashrc`設定HIVE_HOME環境變數。
 
 ```bash
 export HIVE_HOME=/path/to/your/hive
@@ -49,7 +49,7 @@ export PATH=$HIVE_HOME/bin:$PATH
 ```
 備註：`{hostname}`為主機名稱，請依照自己的Hadoop Namenode所在的hostname修改。
 
-設定完畢後，就可以啟動Hive CLI來與HDFS互動囉！
+設定完畢後，就可以啟動Hive CLI來與HDFS互動囉！
 
 ```bash
 hive
@@ -57,7 +57,7 @@ hive
 
 ## Metastore 設定
 
-前面有介紹Hive可以將Schema儲存在RDB上，假設我們有一個mysql db，只要在`hive-site.xml`增加連線資訊的設定，就可以讓Schema儲存到我們指定的RDB內了，但必須先在mysql內建立Hive metastore的RDB schema，可以使用Hive內建script來建立：
+前面有介紹Hive可以將Schema儲存在RDB上，假設我們有一個mysql db，只要在`hive-site.xml`增加連線資訊的設定，就可以讓Schema儲存到我們指定的RDB內了，但必須先在mysql內建立Hive metastore的RDB schema，可以使用Hive內建script來建立：
 
 ```bash
 #使用root角色匯入schema，如果沒有root角色權限，請使用有權限之使用者。
@@ -66,12 +66,12 @@ cd ${HIVE_HOME}/scripts/metastore/upgrade/mysql
 mysql -u root metastore_db<hive-schema-1.2.0.mysql.sql
 ```
 
-匯入完畢，接著增加下列設定到`hive-site.xml`：
+匯入完畢，接著增加下列設定到`hive-site.xml`：
 
 ```xml
 <property>
     <name>javax.jdo.option.ConnectionURL</name>
-    <value>jdbc:mysql://{hostname}/metastore_db</value>
+    <value>jdbc:mysql://{hostname}/metastore_db</value>
 </property>
 
 <property>
@@ -91,11 +91,14 @@ mysql -u root metastore_db<hive-schema-1.2.0.mysql.sql
 ```
 備註：`{hostname}`為主機名稱，請依照自己的mysql所在的hostname修改。
 
-好的！這樣就設定完成了！Hive CLI僅提供單機運作，如果想以server形式透過JDBC讓多人同時連線進來操作，可以透過啟動`hiveserver2` service讓多人同時連線操作。
+接下來要到mysql官方網站下載[mysql JDBC connector][mysql_jdbc_connector]
+
+好的！這樣就設定完成了！Hive CLI僅提供單機運作，如果想以server形式透過JDBC讓多人同時連線進來操作，可以透過啟動`hiveserver2` service讓多人同時連線操作。
 
 ```bash
-#啟動hiveserver2
-hiveserver2
+#啟動hiveserver2
+hive --service hiveserver2
 ```
 
 [hive_download]: http://apache.stu.edu.tw/hive/
+[mysql_jdbc_connector]: https://dev.mysql.com/downloads/connector/j/
