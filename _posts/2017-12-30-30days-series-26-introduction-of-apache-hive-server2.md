@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "30天系列 Day 26-Apache Hive ThriftServer 簡介"
-subtitle:   "30 Days Series Day 26 - Introduction Of Apache Hive ThriftServer"
+title:      "30天系列 Day 26-Apache Hive Server 簡介"
+subtitle:   "30 Days Series Day 26 - Introduction Of Apache Hive Server"
 date:       2017-12-30 00:00:00 +0800
 author:     "Yung-An"
 header-img: "img/technical-post-bg.png"
