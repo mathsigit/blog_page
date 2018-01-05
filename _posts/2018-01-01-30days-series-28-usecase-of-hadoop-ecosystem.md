@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "30天系列 Day 28-Use case Of Hadoop Ecosystem"
+title:      "30天系列 Day 28-Use Case Of Hadoop Ecosystem"
 subtitle:   "30 Days Series Day 28 - Use case Of Hadoop Ecosystem"
 date:       2018-01-01 00:00:00 +0800
 author:     "Yung-An"
